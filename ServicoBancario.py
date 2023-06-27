@@ -1,7 +1,8 @@
 from Banco.Cliente import Cliente
+from abc import ABC
 
 
-class ServicoBancario:
+class ServicoBancario(ABC):
     def __init__(self, num: str, cliente: Cliente) -> None:
         numero = num
         titular = cliente
